@@ -1,0 +1,139 @@
+.edit-container{
+    max-width:750px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.edit-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.edit-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:30px;
+    margin-bottom:6px;
+    color:var(--text);
+}
+
+.edit-title i{
+    color:var(--primary);
+}
+
+.edit-subtitle{
+    color:#777;
+    margin-bottom:30px;
+}
+
+.edit-card input,
+.edit-card textarea,
+.edit-card select{
+    border:2px solid #e5e7eb;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.edit-card input:focus,
+.edit-card textarea:focus,
+.edit-card select:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(108,99,255,.15);
+}
+
+.reminder-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#f8fafc;
+    padding:15px;
+    border-radius:12px;
+}
+
+.edit-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:30px;
+}
+
+.btn-save{
+    background:#22c55e;
+    color:white;
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn-save:hover{
+    background:#16a34a;
+}
+
+.btn-cancel{
+    background:#e5e7eb;
+    color:#333;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.btn-cancel:hover{
+    background:#d1d5db;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark-mode .edit-card{
+    background:#1e293b;
+    color:#f8fafc;
+}
+
+body.dark-mode .edit-title,
+body.dark-mode .form-group label{
+    color:#f8fafc;
+}
+
+body.dark-mode .edit-subtitle{
+    color:#cbd5e1;
+}
+
+body.dark-mode .edit-card input,
+body.dark-mode .edit-card textarea,
+body.dark-mode .edit-card select{
+    background:#334155;
+    color:#fff;
+    border:2px solid #475569;
+}
+
+body.dark-mode .edit-card input::placeholder,
+body.dark-mode .edit-card textarea::placeholder{
+    color:#94a3b8;
+}
+
+body.dark-mode .edit-card input:focus,
+body.dark-mode .edit-card textarea:focus,
+body.dark-mode .edit-card select:focus{
+    border-color:#8b5cf6;
+    box-shadow:0 0 0 4px rgba(139,92,246,.25);
+}
+
+body.dark-mode .reminder-box{
+    background:#334155;
+}
+
+body.dark-mode .btn-cancel{
+    background:#475569;
+    color:#fff;
+}
+
+body.dark-mode .btn-cancel:hover{
+    background:#64748b;
+}

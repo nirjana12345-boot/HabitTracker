@@ -1,0 +1,231 @@
+/* =====================================
+   TRACKING HISTORY
+===================================== */
+
+.tracking-container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.page-header h1{
+    font-size:30px;
+    color:var(--text-color);
+}
+
+.page-header h1 i{
+    color:#4f46e5;
+    margin-right:10px;
+}
+
+/* =========================
+   FILTER
+========================= */
+.filter-controls{
+    background: var(--white);
+    padding:20px;
+    border-radius:12px;
+    box-shadow: var(--shadow);
+    margin-bottom:25px;
+}
+
+.filter-group label{
+    color: var(--text);
+}
+
+.filter-group input,
+.filter-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    font-size:15px;
+    background: var(--bg);
+    color: var(--text);
+    transition:.3s;
+}
+
+.filter-group input::placeholder{
+    color: var(--text-light);
+}
+
+
+
+/* =========================
+   TABLE
+========================= */
+
+.tracking-table-wrapper{
+
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.tracking-table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.tracking-table thead{
+
+    background:#4f46e5;
+    color:#fff;
+
+}
+
+.tracking-table th{
+
+    padding:16px;
+    text-align:left;
+
+}
+
+.tracking-table td{
+
+    padding:15px;
+    border-bottom:1px solid #eee;
+
+}
+
+.tracking-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.tracking-table tbody tr:hover{
+
+    background:#f8f9ff;
+
+}
+
+.habit-name{
+
+    font-weight:600;
+
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.status-badge{
+
+    padding:6px 15px;
+    border-radius:20px;
+    color:#fff;
+    font-size:13px;
+    font-weight:bold;
+
+}
+
+.completed{
+
+    background:#16a34a;
+
+}
+
+.missed{
+
+    background:#dc2626;
+
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-state{
+
+    background:#fff;
+    border-radius:12px;
+    padding:60px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.empty-state i{
+
+    font-size:60px;
+    color:#ccc;
+    margin-bottom:20px;
+
+}
+
+.empty-state h3{
+
+    font-size:28px;
+    margin-bottom:10px;
+
+}
+
+.empty-state p{
+
+    color:#777;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.tracking-table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+.page-header{
+
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.tracking-container{
+
+padding:15px;
+
+}
+
+.page-header h1{
+
+font-size:24px;
+
+}
+
+.filter-controls{
+
+padding:15px;
+
+}
+
+.tracking-table th,
+.tracking-table td{
+
+padding:12px;
+
+}
+
+}

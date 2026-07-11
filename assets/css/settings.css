@@ -1,0 +1,201 @@
+/* ===== SETTINGS ===== */
+.settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.settings-container .page-header {
+    margin-bottom: 32px;
+}
+
+.settings-container .page-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.settings-container .page-header h1 i {
+    color: var(--primary);
+    margin-right: 12px;
+}
+
+.settings-container .page-header p {
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+.settings-container .settings-section {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.settings-container .settings-section:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.settings-container .settings-section .section-header {
+    padding: 20px 24px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.settings-container .settings-section .section-header i {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.settings-container .settings-section .section-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.settings-container .settings-section .section-body {
+    padding: 24px;
+}
+
+.settings-container .settings-section .section-body .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.settings-container .settings-section .section-body .setting-item:last-child {
+    border-bottom: none;
+}
+
+.settings-container .settings-section .section-body .setting-item .setting-info {
+    flex: 1;
+}
+
+.settings-container .settings-section .section-body .setting-item .setting-info .setting-label {
+    font-weight: 500;
+    display: block;
+}
+
+.settings-container .settings-section .section-body .setting-item .setting-info .setting-description {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+.settings-container .toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.settings-container .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.settings-container .toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--border);
+    transition: var(--transition);
+    border-radius: 34px;
+}
+
+.settings-container .toggle-switch .slider::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    transition: var(--transition);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-container .toggle-switch input:checked + .slider {
+    background: var(--primary);
+}
+
+.settings-container .toggle-switch input:checked + .slider::before {
+    transform: translateX(22px);
+}
+
+.settings-container .notification-preferences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.settings-container .notification-preferences .pref-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--bg);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.settings-container .notification-preferences .pref-item:hover {
+    background: var(--secondary);
+}
+
+.settings-container .notification-preferences .pref-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--primary);
+}
+
+.settings-container .notification-preferences .pref-item label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.settings-container .danger-zone {
+    border: 2px solid var(--danger);
+}
+
+.settings-container .danger-zone .section-header {
+    border-bottom-color: var(--danger);
+}
+
+.settings-container .danger-zone .section-header i {
+    color: var(--danger);
+}
+
+.settings-container .danger-zone .section-body .setting-item .btn-danger {
+    padding: 8px 20px;
+}
+
+@media (max-width: 768px) {
+    .settings-container .settings-section .section-body .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .settings-container .notification-preferences {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-container .settings-section .section-body {
+        padding: 16px;
+    }
+    
+    .settings-container .settings-section .section-header {
+        padding: 16px 20px;
+    }
+}

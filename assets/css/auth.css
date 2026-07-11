@@ -1,0 +1,243 @@
+/* ===== AUTH PAGES ===== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg) 0%, var(--secondary) 100%);
+    padding: 20px;
+}
+
+.auth-box {
+    background: var(--white);
+    color: var(--text);
+    padding: 48px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 420px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+}
+
+.auth-box .logo {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-box .logo i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1px;
+}
+
+.auth-box .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.auth-box .logo p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.auth-box .auth-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: var(--text);
+}
+
+.auth-box .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-box .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.auth-box .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg);
+    color: var(--text);
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.auth-box .form-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+    background: var(--white);
+}
+
+ .auth-box .form-group .input-icon {
+    position: relative;
+
+}
+
+.auth-box .form-group .input-icon i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+} */
+
+.input-icon{
+    position:relative;
+}
+
+.left-icon{
+    position:absolute;
+    left:14px;
+    top:50%;
+    transform:translateY(-50%);
+    color:var(--text-light);
+}
+
+.input-icon input{
+    width: 100%;
+    padding-left:60px;
+    padding-right:45px;
+}
+
+.password-toggle{
+    position:absolute;
+    right:50px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:var(--text-light);
+    /* z-index:10; */
+}
+
+.password-toggle i{
+    position:static;
+}
+
+.password-toggle:hover{
+    color:var(--primary);
+}
+
+
+.auth-box .form-group .input-icon input {
+    padding-left: 40px;
+}
+
+.auth-box .btn-primary {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.auth-box .auth-footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
+}
+
+.auth-box .auth-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.auth-box .auth-footer a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 32px 24px;
+    }
+}
+
+
+/* remember-me & forgot password */
+
+.form-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:0;
+    cursor:pointer;
+}
+
+.remember-me input{
+    width:auto;
+    cursor:pointer;
+}
+
+.forgot-password{
+    color:var(--primary);
+    text-decoration:none;
+    font-size:.9rem;
+    position:relative;
+    top:-18px;      /* Moves it upward */
+    font-weight: 500;
+}
+
+.forgot-password:hover{
+    text-decoration:underline;
+}
+
+ /* alert */
+.alert {
+    display: block;
+}
+
+.alert div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.alert button {
+    float: right;
+}
+
+.error-text{
+    /* display:block; */
+    color:#e53935;
+    /* font-size:0.85rem; */
+    margin-top:5px;
+    margin-left:3px;
+}
+
+
